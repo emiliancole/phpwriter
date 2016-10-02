@@ -1,0 +1,20 @@
+h1 { color: lightblue; }
+a { color: lightgreen; }
+body 
+{ 
+  background-color: black;
+  color: orange;
+  font-family: Verdana;
+}      
+canvas { display: block; margin: 0 auto; }
+iframe { border: none; display: inline; width: 500px; height: 84px; }
+li { display:inline-block; margin:8px; }
+.thumbnail { width: 64px; height: 64px; display:block; margin:auto; }
+.inverted { filter: invert(100%); -webkit-filter: invert(100%); }
+
+textarea {
+   font-size: medium;
+   font-family: Verdana;
+} 
+
+
