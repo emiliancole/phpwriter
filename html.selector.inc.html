@@ -1,0 +1,192 @@
+<input type="button" value="html" onclick="addHtml()" />
+<input type="button" value="link" onclick="addLink()" />
+<input type="button" value="script" onclick="addScript()" />
+<input type="button" value="br" onclick="insertAtCaret('inputTextToSave','<br />');" />
+<input type="button" value="p" onclick="insertAtCaret('inputTextToSave','<p>');return false;" />
+<input type="button" value="a" onclick="insertAtCaret('inputTextToSave','<a href=\'http://www.domain.ext\' target=\'_blank\'>link</a>');" />
+<input type="button" value="div" onclick="insertAtCaret('inputTextToSave','<div class=\'classname\'> </div>');" />
+
+<select id="myTags.1" onchange="insertAtCaret('inputTextToSave', document.getElementById('myTags.1').value);return false;">
+<option value="">TAGS.1</option>
+<option value="<!-- This is a comment -->">!--</option>
+<option value="<!DOCTYPE html>">!DOCTYPE</option>
+<option value="<a href='http://www.domain.ext' target='_blank'>link</a>">a</option>
+<option value="<abbr title='World Health Organization'>WHO</abbr>">abbr</option>
+<option value="<address>&#013;Mr John Smith&#013;Hollywood Street, 123&#013;New York, USA&#013;</address>">address</option>
+<option value="<area shape='rect' coords='0,0,82,126' href='sun.html' alt='Sun'>">area</option>
+<option value="<article>article item</article>">article</option>
+<option value="<aside>related to the surrounding content</aside>">aside</option>
+<option value="<audio controls>&#013; <source src='audiofile.ogg' type='audio/ogg'>&#013;
+ <source src='audiofile.mp3' type='audio/mpeg'>&#013; Your browser does not support the audio element.&#013;
+ </audio>&#013;">audio</option>
+<option value="<b>bold text</b>">b</option>
+<option value="<base href='http://www.basedomain.com/images/' target='_blank'>">base</option>
+<option value="<bdi>unknown directionality</bdi>">bdi</option>
+<option value="<bdo dir='rtl'>right-to-left</bdo>">bdo rtl</option>
+<option value="<bdo dir='ltr'>left-to-right</bdo>">bdo ltr</option>
+<option value="<blockquote cite='http://www.worldwildlife.org/who/index.html'>&#013;
+Block content to quote.&#013;
+</blockquote>">blockquote</option>
+<option value="<button type='button' onclick='myFunction();'>Click Me!</button>">button</option>
+<option value="<canvas id='myCanvas'>Your browser does not support the canvas tag.</canvas>">canvas</option>
+<option value="<caption>Table caption</caption>">caption</option>
+<option value="<cite>The Scream</cite> by Edward Munch. Painted in 1893.">cite</option>
+<option value="<code>computer code here...</code>">code</option>
+<option value="<col span='2' style='background-color:red'>">col</option>
+<option value="<colgroup>&#013;
+    <col span='2' style='background-color:red'>&#013;
+    <col style='background-color:yellow'>&#013;
+</colgroup>">colgroup</option>
+<option value="<datalist id='browsers'>
+  <option value='Firefox'>
+  <option value='Chrome'>
+  <option value='Opera'>
+  <option value='Safari'>
+</datalist>">datalist</option>
+<option value="<del>deleted word</del>">del</option>
+<option value='<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>'>dl dt dd</option>
+<option value="<details>&#013;<summary>Summary</summary>&#013;
+<p>paragraph</p>&#013;</details>&#013;">details</option>
+<option value="<dfn>HTML</dfn> is the standard markup language for the web.">dfn</option>
+<option value="<dialog open>This is an open dialog window</dialog>">dialog</option>
+<option value="<div class='classname' id='idvalue'>&#013;&#013;</div>&#013;">div</option>
+<option value="<em>emphasized text</em>">em</option>
+<option value=" <embed src='helloworld.swf'> ">embed</option>
+</select>
+
+<select id="myTags.2" onchange="insertAtCaret('inputTextToSave', document.getElementById('myTags.2').value);return false;">
+<option value="">TAGS.2</option>
+<option value="<fieldset>&#013; <legend>Personalia:</legend>&#013;
+ Name: <input type='text'><br>&#013; Email: <input type='text'><br>&#013;
+ Date of birth: <input type='text'>&#013;</fieldset>">fieldset</option>
+<option value="<figcaption>Fig. 1 - Image caption.</figcaption>">figcaption</option>
+<option value="<figure>&#013;
+  <img src='imgagefile.jpg' alt='alt text' width='300' height='200'>&#013;</figure>">figure</option>
+<option value="<footer>&#013;<p>author/copyright info.</p>&#013;</footer>">footer</option>
+<option value="<form action='filename.php' method='post'>&#013;&#013;</form>&#013;">form</option>
+<option value="<h1>header</h1>">h1</option>
+<option value="<h2>header</h2>">h2</option>
+<option value="<h3>header</h3>">h3</option>
+<option value="<h4>header</h4>">h4</option>
+<option value="<h5>header</h5>">h5</option>
+<option value="<h6>header</h6>">h6</option>
+<option value="<header>&#013;&#013;</header>&#013;">header</option>
+<option value="<hr>">hr</option>
+<option value="<i>italic</i>">i</option>
+<option value="<iframe src='http://www.domain.ext'></iframe>">iframe</option>
+<option value="<img src='file.png' alt='altstring' width='200' height='50' />">img</option>
+<option value="<input type='text' name='aname' value='astring'>">input.text</option>
+<option value="<input type='password' name='psw'>">input.password</option>
+<option value="<input type='radio' name='radioname' value='radiostring' checked>">input.radio</option>
+<option value="<input type='checkbox' name='checkname' value='checkstring'>">input.checkbox</option>
+<option value="<input type='button' name='btname' onclick='alert();' value='Click Me!'>">input.button</option>
+<option value="<input type='reset' value='Reset'>">input.reset</option>
+<option value="<input type='submit' value='Submit'>">input.submit</option>
+<option value="<del>delete</del> <ins>insert</ins>">ins</option>
+<option value="<kbd>keyboard input</kbd>">kbd</option>
+<option value="Encryption: <keygen name='security'>">keygen</option>
+<option value="<label for='city'>City</label>">label</option>
+<option value=" <legend>User Data:</legend>">legend</option>
+<option value="<li>Coffee</li>">li</option>
+<option value="<link rel='stylesheet' type='text/css' href='theme.css'>">link</option>
+<option value="<main>&#013;&#013;</main>&#013;">main</option>
+<option value="<map name='planetmap'>&#013;&#013;</map>&#013;">map</option>
+<option value="<mark>marked text</mark>">mark</option>
+<option value="<menu type='context' id='mymenu'>&#013;&#013;</menu>&#013;">menu</option>
+<option value="<menuitem label='mylabel' onclick='myfunction();' icon='iconfile.png'>
+</menuitem>">menuitem</option>
+<option value="<meta charset='UTF-8'>">meta</option>
+<option value="<meter value='2' min='0' max='10'>2 out of 10</meter>">meter</option>
+<option value="<nav>&#013;&#013;</nav>">nav</option>
+<option value="<noscript>Your browser does not support JavaScript!</noscript>">noscript</option>
+</select>
+
+<select id="myTags.3" onchange="insertAtCaret('inputTextToSave', document.getElementById('myTags.3').value);return false;">
+  <option value="">TAGS.3</option>
+  <option value="<object width='300' height='200' data='helloworld.swf'></object>">object</option>
+<option value="<ol>&#013;&#013;</ol>">ol</option>
+<option value="<optgroup label='Swedish Cars'>">optgroup</option>
+<option value="<option value='volvo'>Volvo</option>">option</option>
+<option value="<form oninput='x.value=parseInt(a.value)+parseInt(b.value)'>0&#013;
+<input type='range' id='a' value='50'>100&#013;
++<input type='number' id='b' value='50'>&#013;
+=<output name='x' for='a b'></output>&#013;</form>&#013;">output</option>
+<option value="<p>paragraph</p>">p</option>
+<option value="<object data='horse.wav'>&#013;<param name='autoplay' value='true'>&#013;</object>&#013;">param</option>
+<option value="<pre>&#013;&#013;</pre>">pre</option>
+<option value="<progress value='22' max='100'></progress>">progress</option>
+<option value="<q>quotation</q>">q</option>
+<option value="<ruby>&#013;漢 <rt><rp>(</rp>ㄏㄢˋ<rp>)</rp></rt>&#013;</ruby>">rp</option>
+<option value="<ruby>&#013; 漢 <rt> ㄏㄢˋ </rt>&#013;</ruby>">rt</option>
+<option value="<ruby>&#013; 漢 <rt> ㄏㄢˋ </rt>&#013;</ruby>">ruby</option>
+<option value="<s>My car is blue.</s>">s</option>
+<option value="<samp>output from a computer program</samp>">samp</option>
+<option value=" <script>&#013;document.getElementById('demo').innerHTML = 'Hello!';&#013;
+</script>&#013;">script</option>
+<option value="<section>&#013;<h2>TITLE</h2>&#013;<p>paragraph content</p>&#013;</section>&#013;">section</option>
+<option value="<select>&#013;<option value='volvo'>Volvo</option>&#013;</select>&#013;">select</option>
+<option value="<small>Copyright 2016-2050 by phpWriter</small>&#013;">small</option>
+<option value="<source src='horse.ogg' type='audio/ogg'>&#013;
+<source src='horse.mp3' type='audio/mpeg'>&#013;">source</option>
+<option value="<span style='color:blue'>blue</span>">span</option>
+<option value="<strong>strong text</strong>">strong</option>
+<option value="<style>&#013;h1 {color:red;}&#013;p {color:blue;}&#013;</style>&#013;">style</option>
+<option value="<sub>subscript</sub>">sub</option>
+<option value="<summary>Summary Content.</summary>">summary</option>
+<option value="<sup>superscript</sup>">sup</option>
+<option value="<table>&#013;&#013;</table>&#013;">table</option>
+<option value="<tbody>&#013;&#013;</tbody>&#013;">tbody</option>
+<option value="<td>aaa</td>">td</option>
+<option value="<textarea rows='4' cols='50'>&#013;&#013;</textarea>&#013;">textarea</option>
+<option value="<tfoot>&#013;&#013;</tfoot>&#013;">tfoot</option>
+ <option value="<th>table head</th>">th</option>
+<option value="<thead>&#013;&#013;</thead>&#013;">thead</option>
+<option value="<time datetime='2016-03-05 10:00'>date and time</time>">time</option>
+<option value="<title>TITLE</title>&#013;">title</option>
+<option value="<tr>&#013;&#013;</tr>&#013;">tr</option>
+<option value="<track src='subtitles_en.vtt' kind='subtitles' srclang='en' 
+label='English'>&#013;">track</option>
+<option value="<u>underline</u>">u</option>
+<option value="<ul>&#013;<li>Coffee</li>&#013;<li>Tea</li>&#013;<li>Milk</li></ul>&#013;">ul</option>
+<option value="<var>variable</var>">var</option>
+<option value="<video width='320' height='240' controls>&#013;
+<source src='movie.mp4' type='video/mp4'>&#013;</video>&#013;">video</option>
+<option value="<wbr>Word Break Opportunity<wbr>">wbr</option>
+</select> 
+
+<select id="myAttribute" onchange="insertAtCaret('inputTextToSave', document.getElementById('myAttribute').value);return false;">
+  <option value="">ATTRIBUTE</option>
+  <option value="lang='en-US'">lang</option>
+  <option value="title='Content Title'">title</option>
+  <option value="alt='image not available'">alt</option>
+  <option value="class='classname'">class</option>
+  <option value="href='http://www.address.com'">href</option>
+  <option value="id='uniqueid'">id</option>
+  <option value="src='http://www.address.org/dir/image.jpg'">src</option>
+  <option value="style='font-size:18px'">style</option>
+  
+</select> 
+
+<select id="myEntity" 
+onchange="insertAtCaret('inputTextToSave', document.getElementById('myEntity').value);">
+  <option value="">ENTITY</option>
+  <option value="&amp;nbsp;">&nbsp;</option>
+  <option value="&amp;lt;">&lt;</option>
+  <option value="&amp;gt;">&gt;</option>
+  <option value="&amp;">&amp;</option>
+  <option value="&amp;cent;">&cent; </option>
+  <option value="&amp;dollar;">&dollar; </option>
+  <option value="&amp;euro;">&euro; </option>
+  <option value="&amp;pound;">&pound; </option>
+  <option value="&amp;yen;">&yen; </option>
+  <option value="&amp;copy;">&copy; </option>
+  <option value="&amp;reg;">&reg; </option>
+  
+</select> 
+
+<input type="button" value="reset" onclick="resetHtmlSelect();" />
