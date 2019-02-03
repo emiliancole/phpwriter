@@ -1,0 +1,50 @@
+checkdate($month, $day, $year);
+$datetime = date_add($datetime, $dateinterval);
+$datetime = date_create_from_format($format, $time, $opttimezone)
+$datetimeimmutable = date_create_immutable ($time = "now", $timezone = NULL);
+$datetimeimmutable = date_​create_​immutable($time = "now", $timezone = NULL);
+$datetime = date_create($time = "now", $timezone = NULL);
+$datetime = date_date_set($datetime, $intyear, $intmonth, $intday);
+date_​default_​timezone_​get();
+date_​default_​timezone_​set($timezoneidentifier );
+$dateinterval = date_diff ($datetime1 , $datetime2, $absolute = false);
+$string = date_format($date , $format);
+$array = date_get_last_errors();
+$dateinterval = date_​interval_​create_​from_​date_​string($stringtime);
+$dateinterval = date_​interval_​format($format);
+$datetime = date_isodate_set($datetime , $intyear, $intweek, $intday = 1);
+$datetime = date_modify ( DateTime $object , string $modify );
+$int =  date_offset_get ( DateTimeInterface $object );
+$array =  date_parse_from_format ( string $format , string $date );
+$array =  date_parse ( string $date )
+$datetime = date_sub ( DateTime $object , DateInterval $interval );
+$array =  date_sun_info ( int $time , float $latitude , float $longitude );
+$mixed = date_sunrise ( int $timestamp [, int $format = SUNFUNCS_RET_STRING [, float $latitude = ini_get("date.default_latitude") [, float $longitude = ini_get("date.default_longitude") [, float $zenith = ini_get("date.sunrise_zenith") [, float $gmt_offset = 0 ]]]]] )
+$mixed =  date_sunset($timestamp, $format = SUNFUNCS_RET_STRING, $latitude = ini_get("date.default_latitude"), $longitude = ini_get("date.default_longitude"), float $zenith = ini_get("date.sunset_zenith"), $gmt_offset = 0);
+$datetime = date_time_set ( DateTime $object , int $hour , int $minute [, int $second = 0 ] )
+$int =  date_timestamp_get ( DateTimeInterface $object );
+$datetime = date_timestamp_set ( DateTime $object , int $unixtimestamp )
+$datetimezone = date_timezone_get ( DateTimeInterface $object )
+$datetime = date_timezone_set ( DateTime $object , DateTimeZone $timezone )
+$string =  date ( string $format [, int $timestamp = time() ] )
+$array =  getdate ([ int $timestamp = time() ] )
+$mixed =  gettimeofday ([ bool $return_float = false ] )
+$string = gmdate ( string $format [, int $timestamp = time() ] )
+$int =  gmmktime ($hour = gmdate("H"), $minute = gmdate("i"), $second = gmdate("s"), $month = gmdate("n"), $day = gmdate("j"), $year = gmdate("Y"), $is_dst = -1);
+$string = gmstrftime ( string $format [, int $timestamp = time() ] )
+$int =  idate ( string $format [, int $timestamp = time() ] )
+$array =  localtime ([ int $timestamp = time() [, bool $is_associative = false ]] )
+$mixed =  microtime ([ bool $get_as_float = false ] )
+$int =  mktime ($hour = date("H"), $minute = date("i"), $second = date("s"), $month = date("n"), $day = date("j"), $year = date("Y"), $is_dst = -1);
+$string = strftime ( string $format [, int $timestamp = time() ] )
+$array =  strptime ( string $date , string $format )
+$int =  strtotime ( string $time [, int $now = time() ] )$int = time ( void )
+$array =  timezone_abbreviations_list ( void )
+$array =  timezone_identifiers_list ([ int $what = DateTimeZone::ALL [, string $country = NULL ]] )
+$array =  timezone_location_get ( DateTimeZone $object )
+$string =   timezone_name_from_abbr ( string $abbr [, int $gmtOffset = -1 [, int $isdst = -1 ]] )
+$string =   timezone_name_get ( DateTimeZone $object )
+$int = timezone_offset_get ( DateTimeZone $object , DateTime $datetime )
+$datetimezone = timezone_open ( string $timezone )
+$array =  timezone_transitions_get ( DateTimeZone $object [, int $timestamp_begin [, int $timestamp_end ]] )
+$string =   timezone_version_get();

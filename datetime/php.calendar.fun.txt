@@ -1,0 +1,18 @@
+$int = cal_days_in_month($intcalendar , $intmonth , $intyear);
+$array = cal_from_jd($intjd , $intcalendar);
+$array = cal_info ($optintcalendar = -1);
+$int = cal_to_jd($intcalendar , $intmonth , $intday , $intyear);
+$int = easter_date ($optintyear);
+$int = easter_days ($optintyear, $optintmethod = CAL_EASTER_DEFAULT);
+$int = frenchtojd($intmonth , $intday , $intyear);
+$int = gregoriantojd($intmonth , $intday , $intyear);
+$mixed = jddayofweek($intjulianday, $optintmode = CAL_DOW_DAYNO);
+$string = jdmonthname($intjulianday , $intmode);
+$string = jdtofrench($intjuliandaycount);
+$string = jdtogregorian($intjulianday);
+$string = jdtojewish($intjuliandaycount, $opthebrew = false, $optintfl = 0);
+$string = jdtojulian($intjulianday);
+$int = jdtounix($intjday);
+$int = jewishtojd($intmonth , $intday , $intyear);
+$int = juliantojd($intmonth , $intday , $intyear);
+$int = unixtojd ($optinttimestamp = time());
