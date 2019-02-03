@@ -1,0 +1,41 @@
+
+<input type="button" value="SYNTAX" onclick="alert(
+'/ : Delimiter\n'+
+'# : Delimiter\n'+
+'+ : Delimiter\n'+
+'% : Delimiter\n'+
+'(this [is] a (pattern)) : Pattern delimiters\n'+
+'{this [is] a (pattern)} : Pattern delimiters\n'+
+'[this [is] a (pattern)] : Pattern delimiters\n'+
+'<this [is] a (pattern)> : Pattern delimiters\n'+
+'\\ : general escape character with several uses\n'+
+'^ : assert start of subject (or line, in multiline mode)\n'+
+'$ : assert end of subject or before a terminating newline (or end of line, in multiline mode)\n'+
+'. : match any character except newline (by default)\n'+
+'[ : start character class definition\n'+
+'] : end character class definition\n'+
+'| : start of alternative branch\n'+
+'( : start subpattern\n'+
+') : end subpattern\n'+
+'? : extends the meaning of (, also 0 or 1 quantifier, also makes greedy quantifiers lazy (see repetition)\n'+
+'* : 0 or more quantifier\n'+
+'+ : 1 or more quantifier\n'+
+'{ : start min/max quantifier\n'+
+'} : end min/max quantifier\n'+
+'\\ : general escape character - inside square brackets\n'+
+'^ : negate the class, but only if the first character - inside square brackets\n'+
+'- : indicates character range - inside square brackets\n'+
+'\\a : alarm, that is, the BEL character (hex 07)\n'+
+'\\cx : control-x, where x is any character\n'+
+'\\e : escape (hex 1B)\n'+
+'\\f : formfeed (hex 0C)\n'+
+'\\n : newline (hex 0A)\n'+
+'\\p{xx} : a character with the xx property, see unicode properties for more info\n'+
+'\\P{xx} : a character without the xx property, see unicode properties for more info\n'+
+'\\r : carriage return (hex 0D)\n'+
+'\\R : line break: matches \\n, \\r and \\r\\n \n'+
+'\\t : tab (hex 09) \n'+
+'\\xhh : character with hex code hh\n'+ 
+'\\ddd : character with octal code ddd, or backreference\n')" />
+
+

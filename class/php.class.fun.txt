@@ -1,0 +1,19 @@
+__autoload ($class);
+$bool =class_alias($original, $alias, $optautoload = TRUE);
+$bool = class_exists($class_name, $optautoload = true);
+$string = get_called_class();
+$array = get_class_methods($classname);
+$array = get_class_vars($classname);
+$string = get_class($optobject = NULL);
+$array = get_declared_classes();
+$array = get_declared_interfaces();
+$array = get_declared_traits();
+$array = get_object_vars($object);
+$string = get_parent_class($optobject);
+$bool = interface_exists($interfacename, $optautoload = true);
+$bool = is_a($object, $classname,  $optallowstring = FALSE);
+$bool = is_subclass_of($object, $classname, $optallowstring = TRUE);
+$bool = method_exists($object, $method_name);
+$bool = property_exists($class, $property);
+$bool = trait_exists($traitname, $optautoload);
+

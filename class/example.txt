@@ -1,0 +1,1 @@
+class SimpleClassn{\n public $var = 'a default value';\n public function displayVar() {\n  echo $this->var;\n }\n }\n 

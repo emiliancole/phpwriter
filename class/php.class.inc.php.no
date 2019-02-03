@@ -1,0 +1,11 @@
+<?php 
+$lines = file('php.class.txt', FILE_IGNORE_NEW_LINES);
+$functions = file('php.class.fun.txt', FILE_IGNORE_NEW_LINES);
+echo "\n";
+echo "<select id=\"myClass\" onchange=\"insertAtCaret('inputTextToSave', document.getElementById('myClass').value);\">\n";
+echo "<option value=\"\">CLASS</option>\n";
+foreach ($lines as $line_num => $line) {
+    echo "<option value=\"$functions[$line_num]\">".$line."</option>\n";
+};
+echo "</select>\n\n";
+?>
