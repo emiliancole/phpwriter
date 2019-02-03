@@ -1,0 +1,135 @@
+<select id="myFile.1" onchange="insertAtCaret('inputTextToSave', document.getElementById('myFile.1').value);return false;">
+<option value="">FILE.1</option>
+<option value="$string = basename($path, $optsuffix);">basename</option>
+<option value="chgrp($filename, $group);">chgrp</option>
+<option value="chmod($filename, $mode);">chmod</option>
+<option value="chmod($filename, 0600);">chmod_rw_owner*</option>
+<option value="chmod($filename, 0644);">chmod_rw_owner_r*</option>
+<option value="chmod($filename, 0700);">chmod_rwx_owner*</option>
+<option value="chown($filename, $user);">chown</option>
+<option value="clearstatcache($optrealpathfalse, $optfilename);">clearstatcache</option>
+<option value="copy($source, $dest, $optcontext);">copy</option>
+<option value="$string = dirname($path, $optlevels);">dirname</option>
+<option value="$float = disk_free_space($directory);">disk_free_space</option>
+<option value="$float = disk_total_space($directory);">disk_total_space</option>
+<option value="fclose($handle);">fclose</option>
+<option value="feof($handle);">feof</option>
+<option value="fflush($handle);">fflush</option>
+<option value="$string = fgetc($handle);">fgetc</option>
+<option value="$array = fgetcsv($handle, $optlength, $optdelimiter, $optenclosure, $optescape);">fgetcsv</option>
+<option value="$string = fgets($handle, $optlength);">fgets</option>
+<option value="$string = fgetss($handle, $optlength, $optallowabletags);">fgetss</option>
+<option value="file_exists($filename);">file_exists</option>
+<option value="$string = file_get_contents($filename);">file_get_contents</option>
+<option value="$string = file_get_contents($filename, $optuseincludepath, $optcontext, $optoffset, $optmaxlen);">file_get_contents*</option>
+
+<option value="$int = file_put_contents($filename, $mixeddata);">file_put_contents</option>
+<option value="$int = file_put_contents($filename, $mixeddata, FILE_APPEND | LOCK_EX);">file_put_contents_append*</option>
+<option value="$int = file_put_contents($filename, $mixeddata, FILE_USE_INCLUDE_PATH);">file_put_contents_include*</option>
+<option value="$array = file($filename);">file</option>
+<option value="$array = file($filename, FILE_USE_INCLUDE_PATH);">file_include*</option>
+<option value="$array = file($filename, FILE_IGNORE_NEW_LINES);">file_no_nl*</option>
+<option value="$array = file($filename, FILE_SKIP_EMPTY_LINES);">file_skip_el*</option>
+</select> 
+
+<select id="myFile.2" onchange="insertAtCaret('inputTextToSave', document.getElementById('myFile.2').value);return false;">
+<option value="">FILE.2</option>
+<option value="$int = fileatime($filename);">fileatime</option>
+<option value="$int = filectime($filename);">filectime</option>
+<option value="$int = filegroup($filename);">filegroup</option>
+<option value="$int = fileinode($filename);">fileinode</option>
+<option value="$int = filemtime($filename);">filemtime</option>
+<option value="$int = fileowner($filename);">fileowner</option>
+<option value="$int = fileperms($filename);">fileperms</option>
+<option value="$int = filesize($filename);">filesize</option>
+<option value="$string = filetype($filename);">filetype</option>
+<option value="flock($handle, $optoperation, &$optwouldblock);">flock</option>
+<option value="fnmatch($pattern, $string, $optflags);">fnmatch</option>
+<option value="$handle = fopen($filename, $mode, $optincludepath, $optcontext);">fopen</option>
+<option value="$int = fpassthru($handle);">fpassthru</option>
+<option value="$int = fputcsv($handle, $array, $optdelimiter, $optenclosure, $optescape);">fputcsv</option>
+<option value="$int = fwrite($handle, $string, $optlength);">fputs</option>
+<option value="$string = fread($handle, $length);">fread</option>
+<option value="$mixed = fscanf($handle, $format, &$optmixed);">fscanf</option>
+<option value="$int = fseek($handle, $offset, $optwhence);">fseek</option>
+<option value="$array = fstat($handle);">fstat</option>
+<option value="$int = ftell($handle);">ftell</option>
+<option value="ftruncate($handle, $size);">ftruncate</option>
+<option value="$int = fwrite($handle, $string, $optlength);">fwrite</option>
+<option value="$array = glob($pattern);">glob</option>
+<option value="$array = glob($pattern, GLOB_BRACE);">glob_brace*</option>
+<option value="$array = glob($pattern, GLOB_ERR);">glob_err*</option>
+<option value="$array = glob($pattern, GLOB_NOCHECK);">glob_nocheck*</option>
+<option value="$array = glob($pattern, GLOB_ESCAPE);">glob_escape*</option>
+<option value="$array = glob($pattern, GLOB_NOSORT);">glob_nosort*</option>
+<option value="$array = glob($pattern, GLOB_MARK);">glob_mark*</option>
+<option value="$array = glob($pattern, GLOB_ONLYDIR);">glob_onlydir*</option>
+</select> 
+
+<select id="myFile.3" onchange="insertAtCaret('inputTextToSave', document.getElementById('myFile.3').value);return false;">
+<option value="">FILE.3</option>
+<option value="is_dir($filename);">is_dir</option>
+<option value="is_executable($filename);">is_executable</option>
+<option value="is_file($filename);">is_file</option>
+<option value="is_link($filename);">is_link</option>
+<option value="is_readable($filename);">is_readable</option>
+<option value="is_uploaded_file($filename);">is_uploaded_file</option>
+<option value="is_writable($filename);">is_writable</option>
+<option value="lchgrp($filename, $group);">lchgrp</option>
+<option value="lchown ($filename, $user);">lchown</option>
+<option value="link($target, $link);">link</option>
+<option value="$int = linkinfo($path);">linkinfo</option>
+<option value="$array = lstat($filename);">lstat</option>
+<option value="mkdir($pathname, $optmode, $optrecursive, $optcontext);">mkdir</option>
+<option value="mkdir($pathname, $optmode, true, $optcontext);">mkdir_recursive*</option>
+<option value="move_uploaded_file($filename, $destination);">move_uploaded_file</option>
+<option value="$array = parse_ini_file($filename, $optprocess, $optscanner);">parse_ini_file</option>
+<option value="$array = parse_ini_string($ini, $optprocess, $optscanner);">parse_ini_string</option>
+<option value="$mixed = pathinfo($path);">pathinfo</option>
+<option value="$mixed = pathinfo($path, PATHINFO_BASENAME);">pathinfo_basename*</option>
+<option value="$mixed = pathinfo($path, PATHINFO_DIRNAME);">pathinfo_dirname*</option>
+<option value="$mixed = pathinfo($path, PATHINFO_EXTENSION);">pathinfo_extension*</option>
+<option value="$mixed = pathinfo($path, PATHINFO_FILENAME);">pathinfo_filename*</option>
+<option value="$int = pclose($handle);">pclose</option>
+<option value="$handle = popen($command, $mode);">popen</option>
+<option value="$int = readfile($filename, $optuseincludepath, $optcontext);">readfile</option>
+<option value="$string = readlink($path);">readlink</option>
+<option value="$array = realpath_cache_get();">realpath_cache_get</option>
+<option value="$int = realpath_cache_size();">realpath_cache_size</option>
+<option value="$string = realpath($path);">realpath</option>
+<option value="rename($oldname, $newname, $optcontext);">rename</option>
+<option value="rewind($handle);">rewind</option>
+<option value="rmdir($dirname, $optcontext);">rmdir</option>
+<option value="$array = stat($filename);">stat</option>
+<option value="symlink($target, $link);">symlink</option>
+<option value="$string = tempnam($dir, $prefix);">tempnam</option>
+<option value="$handle = tmpfile();">tmpfile</option>
+<option value="touch($filename, $opttime, $optatime);">touch</option>
+<option value="$int = umask($optmask);">umask</option>
+<option value="unlink($filename, $optcontext);">unlink</option>
+</select> 
+
+<select id="myMode" onchange="insertAtCaret('inputTextToSave', document.getElementById('myMode').value);return false;">
+<option value="">MODE</option>
+<option value="'r'">r</option>
+<option value="'r+'">r+</option>
+<option value="'w'">w</option>
+<option value="'w+'">w+</option>
+<option value="'a'">a</option>
+<option value="'a+'">a+</option>
+<option value="'x'">x</option>
+<option value="'x+'">x+</option>
+<option value="'c'">c</option>
+<option value="'c+'">c+</option>
+</select>
+
+<select id="myFlags" onchange="insertAtCaret('inputTextToSave', document.getElementById('myFlags').value);return false;">
+<option value="">FLAGS</option>
+<option value="GLOB_MARK">GLOB_MARK</option>
+<option value="GLOB_NOSORT">GLOB_NOSORT</option>
+<option value="GLOB_NOCHECK">GLOB_NOCHECK</option>
+<option value="GLOB_NOESCAPE">GLOB_NOESCAPE</option>
+<option value=" GLOB_BRACE"> GLOB_BRACE</option>
+<option value=" GLOB_ONLYDIR"> GLOB_ONLYDIR</option>
+<option value=" GLOB_ERR"> GLOB_ERR</option>
+</select>
