@@ -1,0 +1,123 @@
+<input type="button" value="var_dump" onclick="insertAtCaret('inputTextToSave','var_dump($mixed, $optmixed);');" />
+<input type="button" value="print_r" onclick="insertAtCaret('inputTextToSave','print_r($mixed, $optreturn);');" />
+<input type="button" value="=>" onclick="insertAtCaret('inputTextToSave',' => ');" />
+
+<select id="myArray.1" onchange="insertAtCaret('inputTextToSave', document.getElementById('myArray.1').value);return false;">
+<option value="">ARRAY.1</option>
+<option value="$array = array($optmixed);">(array)</option>
+<option value="$array = [$optmixed];">[array]</option>
+<option value="$array = array_change_key_case($array1, $optcase);">array_change_key_case</option>
+<option value="$array = array_chunk($array1, $size);">array_chunk</option>
+<option value="$array = array_chunk($array1, $size, true);">array_chunk_preserve*</option>
+<option value="$array = array_column($array1, $columnkey);">array_column</option>
+<option value="$array = array_column($array1, $columnkey, $indexkey);">array_column_index*</option>
+<option value="$array = array_combine($arraykeys,$arrayvalues);">array_combine</option>
+<option value="$array = array_count_values($array1);">array_count_values</option>
+<option value="$array = array_diff_assoc($array1, $array2, $optarrayn);">array_diff_assoc</option>
+<option value="$array = array_diff_key($array1, $array2, $optarrayn);">array_diff_key</option>
+<option value="$array = array_diff_uassoc($array1, $array2, $optarrayn, $keycomparefun);">array_diff_uassoc</option>
+<option value="$array = array_diff_ukey($array1, $array2, $optarrayn, $keycomparefun);">array_diff_ukey</option>
+<option value="$array = array_diff($array1, $array2, $optarrayn);">array_diff</option>
+<option value="$array = array_fill_keys($array1, $value);">array_fill_keys</option>
+<option value="$array = array_fill($start, $num, $value);">array_fill</option>
+<option value="$array = array_filter($array1, $callback);">array_filter</option>
+<option value="$array = array_filter($array1, $callback, ARRAY_FILTER_USE_KEY);">array_filter_use_key*</option>
+<option value="$array = array_filter($array1, $callback, ARRAY_FILTER_USE_BOTH);">array_filter_use_both*</option>
+<option value="$array = array_flip($array1);">array_flip</option>
+<option value="$array = array_intersect_assoc($array1, $array2, $optarrayn);">array_intersect_assoc</option>
+<option value="$array = array_intersect_key($array1, $array2, $optarrayn);">array_intersect_key</option>
+<option value="$array = array_intersect_uassoc($array1, $array2, $optarrayn, $keycomparefun);">array_intersect_uassoc</option>
+<option value="$array = array_intersect_ukey($array1, $array2, $optarrayn, $keycomparefun);">array_intersect_ukey</option>
+<option value="$array = array_intersect($array1, $array2, $optarrayn);">array_intersect</option>
+<option value="$bool = array_key_exists($key, $array1);">array_key_exists</option>
+<option value="$array = array_keys($array, $optsearchvalue, $boolstrict);">array_keys</option>
+<option value="$array = array_map($callback , $array1, $optarrayn);">array_map</option>
+<option value="$array = array_merge_recursive($array1, $optarrayn);">array_merge_recursive</option>
+<option value="$array = array_merge($array1, $optarrayn);">array_merge</option>
+<option value="$array = array_multisort(&$array1, $optsortorder, $optsortflags, $optmixed);">array_multisort</option>
+<option value="$array = array_pad($array1, $size, $value);">array_pad</option>
+<option value="$value = array_pop($array1);">array_pop</option>
+<option value="$num = array_product($array1);">array_product</option>
+<option value="$array = array_push(&$array1, $value1, $optvaluen);">array_push</option>
+<option value="$mixed = array_rand($array1, $optnum);">array_rand</option>
+<option value="$mixed = array_reduce($array1, $callback, $optinitial);">array_reduce</option>
+<option value="$array = array_replace_recursive($array1, $array2, $optarrayn);">array_replace_recursive</option>
+<option value="$array = array_replace($array1, $array2, $optarrayn);">array_replace</option>
+<option value="$array = array_reverse($array1, $optpreservekeys);">array_reverse</option>
+<option value="$mixed = array_search($needle, $haystack, $optstrict);">array_search</option>
+<option value="$mixed = array_shift(&$array1);">array_shift</option>
+<option value="$array = array_slice($array1, $offset, $optlength, $optpreservekeys);">array_slice</option>
+<option value="$array = array_splice(&$inputarray, $offset, $optlength, $optreplacementarray);">array_splice</option>
+<option value="$num = array_sum($array1);">array_sum</option>
+</select> 
+
+<select id="myArray.2" onchange="insertAtCaret('inputTextToSave', document.getElementById('myArray.2').value);return false;">
+<option value="">ARRAY.2</option>
+<option value="$array = array_udiff_assoc($array1, $array2, $optarrayn, $valuecomparefunc);">array_udiff_assoc</option>
+<option value="$array = array_udiff_uassoc($array1, $array2, $optarrayn, $valuecomparefunc, $keycomparefunc);">array_udiff_uassoc</option>
+<option value="$array = array_udiff($array1, $array2, $optarrayn, $valuecomparefunc);">array_udiff</option>
+<option value="$array = array_uintersect_assoc($array1, $array2, $optarrayn, $valuecomparefunc);">array_uintersect_assoc</option>
+<option value="$array = array_uintersect_uassoc($array1, $array2, $optarrayn, $valuecomparefunc, $keycomparefunc);">array_uintersect_uassoc</option>
+<option value="$array = array_uintersect($array1, $array2, $optarrayn, $valuecomparefunc);">array_uintersect</option>
+<option value="$array = array_unique($array1, $optsortflags);">array_unique</option>
+<option value="$int = array_unshift(&$array1, $value1, $optmixed);">array_unshift</option>
+<option value="$array = array_values($array1);">array_values</option>
+<option value="array_walk_recursive(&$array1, $callback, $optuserdata)">array_walk_recursive</option>
+<option value="array_walk(&$array1, $callback, $optuserdata)">array_walk</option>
+<option value="arsort(&$array1, $optsortflags);">arsort</option>
+<option value="asort(&$array1, $optsortflags);">asort</option>
+<option value="$array = compact($mixed1, $optmixen);">compact</option>
+<option value="$int = count($array1, COUNT_RECURSIVE);">count_recursive*</option>
+<option value="$int = count($array1);">count_normal*</option>
+<option value="$mixed = current($array1);">current</option>
+<option value="$array = each(&$array1);">each</option>
+<option value="$mixed = end(&$array1);">end</option>
+<option value="$array = extract(&$array1, $optflags, $optprefix);">extract</option>
+<option value="$array = extract($array1);">extract_overwrite_null*</option>
+<option value="in_array($needle, $haystack, $optstrict)">in_array</option>
+<option value="$mixed = key(&$array1);">key</option>
+<option value="krsort(&$array1, $optsortflags)">krsort</option>
+<option value="ksort(&$array1, $optsortflags)">ksort</option>
+<option value="$array = list($mixed, $optmixedn);">list</option>
+<option value="natcasesort(&$array1)">natcasesort</option>
+<option value="natsort(&$array1)">natsort</option>
+<option value="$mixed = next(&$array1);">next</option>
+<option value="$mixed = prev(&$array1);">prev</option>
+<option value="$array = range($start, $end, $optstep);">range</option>
+<option value="$mixed = reset(&$array1);">reset</option>
+<option value="rsort(&$array1, $optsortflags);">rsort</option>
+<option value="shuffle(&$array1)">shuffle</option>
+<option value="sort(&$array1, $optsortflags);">sort</option>
+<option value="uasort(&$array1, $valuecomparefun);">uasort</option>
+<option value="uksort(&$array1, $keycomparefun);">uksort</option>
+<option value="usort(&$array1, $valuecomparefun);">usort</option>
+</select> 
+
+<select id="myArrayOpt" onchange="insertAtCaret('inputTextToSave', document.getElementById('myArrayOpt').value);return false;">
+<option value="">ARRAY.OPT</option>
+<option value="$array = array_change_key_case($array1, CASE_LOWER);">array_change_key_case.CASE_LOWER</option>
+<option value="$array = array_change_key_case($array1, CASE_UPPER);">array_change_key_case.CASE_UPPER</option>
+<option value="false">false</option>
+<option value="true">true</option>
+<option value="$array = array_unique($array1, SORT_LOCALE_STRING);">array_unique.SORT_LOCALE_STRING</option>
+<option value="$array = array_unique($array1, SORT_NUMERIC);">array_unique.SORT_NUMERIC</option>
+<option value="$array = array_unique($array1, SORT_REGULAR);">array_unique.SORT_REGULAR</option>
+<option value="$array = array_unique($array1, SORT_STRING);">array_unique.SORT_STRING</option>
+<option value="$bool = array_multisort($array1, $optarray, SORT_ASC);">array_multisort.SORT_ASC</option>
+<option value="$bool = array_multisort($array1, $optarray, SORT_DESC);">array_multisort.SORT_DESC</option>
+<option value="asort(&$array1, SORT_NATURAL);">asort.SORT_NATURAL</option>
+<option value="asort(&$array1, SORT_NUMERIC);">asort.SORT_NUMERIC</option>
+<option value="asort(&$array1, SORT_REGULAR);">asort.SORT_REGULAR.d</option>
+<option value="asort(&$array1, SORT_STRING);">asort.SORT_STRING</option>
+<option value="asort(&$array1, SORT_LOCALE_STRING);">asort.SORT_LOCALE_STRING</option>
+<option value="asort(&$array1, SORT_FLAG_CASE);">asort.SORT_FLAG_CASE</option>
+<option value="sort(&$array1, SORT_NATURAL);">sort.SORT_NATURAL</option>
+<option value="sort(&$array1, SORT_NUMERIC);">sort.SORT_NUMERIC</option>
+<option value="sort(&$array1, SORT_REGULAR);">sort.SORT_REGULAR.d</option>
+<option value="sort(&$array1, SORT_STRING);">sort.SORT_STRING</option>
+<option value="sort(&$array1, SORT_LOCALE_STRING);">sort.SORT_LOCALE_STRING</option>
+<option value="sort(&$array1, SORT_FLAG_CASE);">sort.SORT_FLAG_CASE</option>
+</select>
+
+
+
