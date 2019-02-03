@@ -1,0 +1,10 @@
+$mixed = preg_filter($pattern, $replacement, $subject, $optintlimit = -1, &$optintcount);
+$array = preg_grep($pattern, $arrayinput, $optflags = 0);
+$int = preg_last_error();
+$int = preg_match_all($pattern, $subject, &$arraymatches, $optintflags = PREG_PATTERN_ORDER, $optintoffset = 0);
+$int = preg_match($pattern, $subject, &$optarraymatches, $optflags = 0, $optoffset = 0);
+$string = preg_quote($str, $optdelimiter = NULL);
+$mixed = preg_replace_callback_array($arraypatterns_and_callbacks, $mixedsubject, $optlimit = -1, &$optcount);
+$mixed = preg_replace_callback($mixedpattern, $callback, $mixedsubject, $optlimit = -1, &$optcount);
+$mixed = preg_replace($mixedpattern, $mixedreplacement, $mixedsubject, $optlimit = -1, &$optcount);
+$array = preg_split($pattern, $subject, $optlimit = -1, $optflags = 0);

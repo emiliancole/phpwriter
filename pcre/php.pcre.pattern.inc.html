@@ -1,0 +1,21 @@
+<select id="myPrcePattern" onchange="insertAtCaret('inputTextToSave', document.getElementById('myPrcePattern').value);">
+<option value="">PATTERN</option>
+<option value="'/\?day=(\d)&name=([^&]+)&fruit=(\w+)/'">url get data</option>
+<option value="/\?(?:day=(\d))?&?(?:name=([^&]+))?&?(?:fruit=(\w+))?/">url get optional data</option>
+<option value="/\(([^()]*)\)/">data inside parenthesis</option>
+<option value="/^(?:1[5-9]|[2-9]\d|[1-9]\d\d+)$/">validate number over 15</option>
+<option value="/^(\d+)?\.\d+$/">floating point numbers</option>
+<option value="public function __clone() {&#013;&#013;}&#013">__clone</option>
+<option value="public function __set($name, $mixed) {&#013;&#013;}&#013">__set</option>
+<option value="public function __get($name) {&#013;&#013;}&#013">__get</option>
+<option value="public function __isset($name) {&#013;&#013;}&#013">__isset</option>
+<option value="public function __unset($name) {&#013;&#013;}&#013">__unset</option>
+<option value="public function __sleep() {&#013;&#013;}&#013">__sleep</option>
+<option value="public function __wakeup() {&#013;&#013;}&#013">__wakeup</option>
+<option value="public function __toString() {&#013;&#013;}&#013">__toString</option>
+<option value="public function __invoke($optobj) {&#013;&#013;}&#013">__invoke</option>
+<option value="public static function __set_state($arrayproperties) {&#013;&#013;}&#013">__set_state</option>
+<option value="public function __debugInfo() {&#013;&#013;}&#013">__debugInfo</option>
+
+</select>
+
