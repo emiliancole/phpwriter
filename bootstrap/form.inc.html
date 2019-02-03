@@ -1,0 +1,24 @@
+<select id="myForm" onchange="insertAtCaret('inputTextToSave', document.getElementById('myForm').value);">
+  <option value="">FORM</option>
+  <option value="<form role='form'>&#013;&#013;&#013;</form>">form</option>
+  <option value="<form class='form-horizontal' role='form'>&#013;">.form-horizontal</option>
+  <option value="<div class='form-group'>&#013;&#013;</div>">.form-group</option>
+  <option value="<label for='email'>Email address:</label>&#013;
+  <input type='email' class='form-control' id='email'>">email</option>
+  <option value="<label for='pwd'>Password:</label>&#013;
+  <input type='password' class='form-control' id='pwd'>">password</option>
+  <option value="form-control">.form-control</option>
+  <option value="form-inline">.form-inline</option>
+  <option value="<div class='checkbox'><label><input type='checkbox'> checkLabel</label></div>">.checkbox</option>
+  <option value="sr-only">.sr-only</option>
+  <option value="col-sm-2">.col-sm-2</option>
+  <option value="control-label">.control-label</option>
+  <option value="<div class='radio'><label><input type='radio' id='r1'> radioLabel</label></div>">.radio</option>
+  <option value="col-sm-10">.col-sm-10</option>
+  <option value="col-sm-offset-2">.col-sm-offset-2</option>
+  <option value="checkbox-inline">.checkbox-inline</option>
+  <option value="form-control-static">.form-control-static</option>
+  <option value="has-success">.has-success</option>
+  <option value="has-error">.has-error</option>
+</select>
+<input type="button" value="reset" onclick="resetBootstrapSelect();" />
