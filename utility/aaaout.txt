@@ -1,0 +1,12 @@
+<select>
+<option value='uno'>uno</option>
+<option value='due'>due</option>
+<option value='tre'>tre</option>
+<option value='quattro'>quattro</option>
+<option value='cinque'>cinque</option>
+<option value='sei'>sei</option>
+<option value='sette'>sette</option>
+<option value='otto'>otto</option>
+<option value='nove'>nove</option>
+<option value='dieci'>dieci</option>
+</select>
